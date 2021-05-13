@@ -1,0 +1,648 @@
+img{
+    max-width:100%; /*keep this in case you add pictures*/
+}
+* {
+  box-sizing:border-box;
+}
+body {
+  font-family: Verdana;
+  background: linear-gradient(to right, #280463, #1300e8);
+  margin:0;
+  padding:0;
+}
+
+header, nav, main, footer, aside, section, article{
+   border-radius:5px;
+}
+header{
+    grid-area:header;
+    background:#bf212e;
+    text-align:center;
+}
+
+
+
+aside {
+  color:#0000b0;
+  font-size:1.25em;
+  padding:10px 0;
+  background:#ffdd03;
+  grid-area:aside;
+}
+
+h4{
+   text-align:center;
+}
+
+.headerpic {
+    grid-area:headerpic;
+    padding:5px;
+    height:10vmax;
+    }
+
+.headertext {
+    grid-area:headertext;
+    text-align:center;
+    }
+    
+.headerwrapper {
+    display:grid;
+    justify-items: center;
+    align-items:center;
+    grid-template-columns:25% auto;
+    grid-template-areas:
+    "headerpic headertext"
+    }
+
+header h1 {
+     font-size:5vw;
+     color:#ffffff;
+     font-family:Impact;
+     text-shadow: 2px 2px 5px #3217ff;
+     margin: 0;
+}
+
+header h3 {
+    font-size:3vw;
+    color:#ffffff;
+    margin:0;
+}
+nav {
+    grid-area:nav;
+    background:#cac537;
+    }
+
+nav li {
+    padding:10px 10px;
+    list-style-type:none;
+    font-size:1.5em;
+    font-weight:bold;
+}
+
+nav a {
+    text-decoration:none;
+    color:#2E2E2E;
+}
+nav a:hover {
+    text-shadow: 2px 2px 5px #3217ff;
+}
+
+main {
+    grid-area:main;
+    background:#89B0C8;
+    color:#030303;
+    padding:5px;
+    }
+
+main h2 {
+    text-align:center;
+    margin:1%;
+}
+
+main p {
+    color:030303;
+    padding:1% 2%;
+    font-size:1em;
+}
+
+main a {
+ color:navy;
+}
+article {
+  background-color:#0000b0;
+  color:white;
+}
+.top {
+  grid-area:top;
+}
+.middle{
+    grid-area:middle;
+}
+.bottom{
+    grid-area:bottom;
+}
+.fig1 {
+  grid-area:fig1;
+}
+.fig2{
+grid-area:fig2;
+background-color:#ffffff;
+}
+section{
+grid-area:section;
+}
+figure{
+  margin:0;
+  padding:0;
+  text-align:center;
+}
+figcation{
+  padding:5px;
+  color:#0000b0;
+  font-weight:bold;
+}
+
+footer {
+    grid-area:footer;
+    background:#92A09D;
+    padding:5px;
+    text-align:center;
+    }
+
+footer p {
+     font-size:1em;
+     color:#000000;
+     margin:0;
+}
+
+audio {
+ max-width: 100%;
+}
+video {
+  max-width:  100%;
+  height:auto;
+}
+.video, .audio {
+    margin:0;
+    display: grid;  /*This needs to be set or it won't center*/
+    justify-content:space-around;
+}
+form {
+    background-color:#ffa500;
+    width:90%;
+    margin:auto;
+    color:black;
+    padding:10px;
+}
+input {
+  margin: 1px 0 10px 0;
+}
+
+.button{
+  padding:5px;
+  background-color:#a4c4fe;
+  color::#0000b0;
+}
+
+
+.call {
+    color:#ffffff;
+    font-size:1.5em;
+    background-color:#0000b0;
+    width:60%;
+    text-align:center;
+    margin: auto;
+}
+
+ 
+ .homeA{
+   grid-area:homeA;
+ }
+ 
+ .homeB{
+    grid-area:homeB;
+ }
+ 
+ .homeC{
+    grid-area:homeC;
+ }
+ 
+ .homeD{
+    grid-area:homeD
+ }
+ .homefigB {
+   grid-area:homefigB;
+ }
+.homefigC {
+   grid-area:homefigC;
+ }
+.homefigD {
+   grid-area:homefigD;
+ }
+
+.homegrid img{
+  max-width:250px;
+}
+.aboutA{
+   grid-area:aboutA
+}
+.aboutB{
+   grid-area:aboutB
+}
+.stafffigB {
+   grid-area:stafffigB;
+ }
+.aboutC{
+   grid-area:aboutC
+}
+.stafffigC{
+   grid-area:stafffigC;
+ }
+.aboutD{
+   grid-area:aboutD
+}
+.StafffigD {
+   grid-area:StafffigD;
+ }
+.aboutE{
+   grid-area:aboutE
+}
+.staffA{
+   grid-area:staffA
+}
+.staffB{
+   grid-area:staffB
+}
+.staffC{
+   grid-area:staffC
+}
+.staffD{
+   grid-area:staffD
+}
+.staffE{
+   grid-area:staffE
+}
+.shopA{
+   grid-area:shopA
+}
+.shopB{
+   grid-area:shopB
+}
+.shopC{
+   grid-area:shopC
+}
+.shopfigC{
+   grid-area:shopfigC;
+ }
+.shopD{
+   grid-area:shopD
+}
+.shopfigD {
+   grid-area:shopfigD;
+ }
+.shopE{
+   grid-area:shopE
+}
+ .shopfigE {
+   grid-area:shopfigE;
+ }
+    .shotA{
+   grid-area:shotA;
+ }
+ 
+ .shotB{
+    grid-area:shotB;
+ }
+ 
+ .shotC{
+    grid-area:shotC;
+ }
+     .coupA{
+   grid-area:coupA;
+ }
+ 
+ .coupB{
+    grid-area:coupB;
+ }
+ 
+ .coupC{
+    grid-area:coupC;
+ }
+   
+     .coupD{
+   grid-area:coupD;
+ }
+ 
+ .coupfigC{
+    grid-area:coupfigC;
+ }
+ 
+ .coupfigD{
+    grid-area:coupfigD;
+ }
+   
+   
+/*---------------------------Mobile Layout----------------------------*/
+.container1 { /*for later*/
+  display: grid;
+  grid-template-columns:100%;
+  grid-gap:.5em;
+  margin:1em;
+  grid-template-areas:
+    "header"
+    "nav"
+    "main"
+    "footer";
+    }
+    
+.container2 { /*for index.html*/
+  display: grid;
+  grid-template-columns:100%;
+  grid-gap:.5em;
+  margin:1%;
+  grid-template-areas:
+    "header"
+    "nav"
+    "main"
+    "aside"
+    "footer";
+    }
+    .container3 { /*for blog.html*/
+  display: grid;
+  grid-template-columns:100%;
+  grid-gap:.5em;
+  margin:1%;
+  grid-template-areas:
+    "header"
+    "nav"
+    "main"
+    "top"
+    "middle"
+    "bottom"
+    "footer";
+}
+
+.container4{
+display:grid;
+grid-template-columns:100%;
+grid-gap:.5em;
+grid-template-areas:
+"header"
+"nav"
+"main"
+"fig2"
+"footer";
+}
+
+.nestedgrid{
+display:grid;
+grid-template-columns:100%;
+grid-template-areas:
+"section"
+"fig1";
+}
+
+  .homegrid{
+   display:grid;
+  grid-template-columns:1fr;
+  margin:0;
+  grid-gap:1em;
+  grid-template-areas:
+   "homeA"
+   "homefigB"
+   "homeB"
+   "homefigC"
+   "homeC"
+   "homefigD"
+   "homeD";
+ }
+ 
+ 
+  
+
+  
+  
+  
+/*This stuff is for the hamburger menu*/
+.toggleNav {
+    display:grid; /*This is what allows the hamburger icon and "Menu" to display*/
+    text-align:center;
+    font-size:1.5em;
+    font-weight:bold;
+    padding:10px;
+    }
+
+#flex-nav ul {
+    display: none; /*jQuery toggles the nav from to this class to the .open when clicked*/
+    text-align:center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    }
+ 
+#flex-nav ul.open { /*.open is the class that gets toggled when clicked (with help from the jQuery code)*/
+    display:grid;
+    }
+    
+#flex-nav li {
+    padding-left:10px;
+    padding-top:10px;
+    }
+
+
+/*-----------------------Tablet Media Query------------------------*/
+@media only screen and (min-width: 480px)  {
+.container1 { /*for index.html*/
+  grid-template-columns:auto 1fr;
+  grid-template-areas:
+    "header header"
+    "nav main"
+    "footer footer";
+    }
+
+.container2 { /*for index.html*/
+  display: grid;
+  grid-template-columns:auto 1fr;
+  grid-gap:.5em;
+  margin:1%;
+  grid-template-areas:
+    "header header"
+    "nav main"
+    "footer footer";
+    }
+.container3 { /*for blog.html*/
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-gap:.5em;
+  margin:1%;
+  grid-template-areas:
+    "header header "
+    "nav main"
+    "top top"
+    "middle middle"
+    "bottom bottom"
+    "footer footer";
+}
+
+.container4{
+display:grid;
+grid-template-columns:auto 1fr;
+grid-template-areas:
+"header header"
+"nav main"
+"fig2 fig2"
+"footer footer";
+}
+.nestedgrid{
+display:grid;
+grid-template-columns:100%;
+grid-template-areas:
+"section"
+"fig1";
+}
+  .homegrid{
+   display:grid;
+  grid-template-columns:1fr;
+  grid-gap:1em;
+  margin:1%;
+  grid-template-areas:
+   "homeA"
+   "homefigB"
+   "homeB"
+   "homefigC"
+   "homeC"
+   "homefigD"
+   "homeD";
+ }
+
+
+
+
+/* Below will change from hamburger menu to side navigation*/
+  
+.toggleNav {
+    display: none; /*Makes the hamburger icon with the word "Menu" to disappear at this screen size*/
+  }
+  
+#flex-nav ul {
+    display:grid;
+    text-align:left;
+  }
+
+#flex-nav li {
+    padding-left:10px;
+    padding-top:10px;
+  }
+
+	}
+
+/*-----------------------Desktop Media Query------------------------*/
+@media only screen and (min-width: 960px)  {
+
+.container1 { /*for index.html*/
+  grid-template-columns:auto 1fr;
+  grid-template-areas:
+    "header header"
+    "nav main "
+    "footer footer ";
+    }
+    
+.container2 { /*for index.html*/
+  display: grid;
+  grid-template-columns: auto 1fr 25%;
+  grid-gap:.5em;
+  margin:1%;
+  grid-template-areas:
+    "header  header header"
+    "nav main main"
+    "footer  footer footer";
+    }
+
+
+.container3 { /*for blog.html*/
+  display: grid;
+  grid-template-columns:auto 1fr 1.5fr;
+  grid-gap:.5em;
+  margin:1%;
+  grid-template-areas:
+    "header header header"
+    "nav main top"
+    "nav main middle"
+    "nav main bottom"
+    "footer footer footer";
+}
+
+.container4{
+display:grid;
+grid-template-columns:auto 1fr;
+grid-template-areas:
+"header header"
+"nav main"
+"fig2 fig2"
+"footer footer";
+}
+.nestedgrid{
+display:grid;
+grid-template-columns:1fr 1fr;
+grid-template-areas:
+"section fig1";
+}
+
+.nestedgrid2{
+display:grid;
+grid-template-columns:1fr 1fr;
+grid-template-areas:
+"div1 div2";
+}
+ 
+
+ 
+ .homegrid{
+   display:grid;
+  grid-template-columns:32% 32% 32%;
+  padding:5px;
+  margin:0;
+  grid-gap:1em;
+  grid-template-areas:
+   "homeA homeA homeA"
+   "homefigB homefigC homefigD"
+   "homeB homeC homeD";
+ }
+ .aboutgrid{
+   display:grid;
+  grid-template-columns:49% 49%;
+  padding:10px;
+  margin:0;
+  grid-gap:1em;
+  grid-template-areas:
+  "aboutA aboutA"
+  "aboutB aboutB"
+  "aboutC aboutD"
+  "aboutE aboutE"
+ }
+ .staffgrid{
+   display:grid;
+  grid-template-columns:38% 60%;
+  padding:10px;
+  margin:0;
+  grid-gap:1em;
+  grid-template-areas:
+ "staffA staffA"
+ "stafffigB staffB"
+ "stafffigC staffC"
+ "stafffigD staffD"
+ "staffE staffE"
+ }
+ .shopgrid{
+   display:grid;
+  grid-template-columns:38% 60%;
+  padding:10px;
+  margin:0;
+  grid-gap:1em;
+  grid-template-areas:
+ "shopA shopA"
+ "shopB shopB"
+ "shopfigC shopC"
+ "shopfigD shopD"
+ "shopfigE shopE"
+ }
+ .coupgrid{
+   display:grid;
+  grid-template-columns:38% 60%;
+  padding:10px;
+  margin:0;
+  grid-gap:1em;
+  grid-template-areas:
+  "coupA CoupA"
+  "coupB coupB"
+  "coupfigC coupC"
+  "coupfigD coupD"
+ }
+ .gallerywrapper {
+  display: grid;
+  justify-items:center;
+  grid-gap:.5em;
+  align-items:end;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+}
